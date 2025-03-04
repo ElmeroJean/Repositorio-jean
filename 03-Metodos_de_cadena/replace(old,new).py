@@ -1,3 +1,3 @@
 nombre="jean"
-nombre=nombre.replace()
-print(f"")
+nombre=nombre.replace('viejo, nuevo')
+print(nombre)
