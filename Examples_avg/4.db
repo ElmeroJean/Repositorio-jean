@@ -1,0 +1,27 @@
+--Utilizar una consulta que muestre los Nombres que empiecen con 'D' y que terminen en 'O'
+SELECT LastName FROM Employees
+WHERE LastName like 'D%' and LastName like '%o'
+
+--Utilizar una consulta que muestre los Apellidos que tengan un tamaño de 5 caracteres y terminen con 'A'
+SELECT * FROM Employees
+WHERE LastName like '_____%a'
+
+--Utilizar una consulta que muestre el promedio de cantidades vendida po id de Products
+SELECT OrderDetails.ProductID, avg(ProductID) FROM OrderDetails
+GROUP by ProductID
+
+SELECT ProductID, avg(quantity) FROM OrderDetails
+GROUP by ProductID
+
+--Realizar una consulta que muestre el total de cantidades vendidas  por id ordenes, antes de eso se necesita, trabajar unicamente con los id de ordene de detalles entre 0 y 40
+SELECT total(quantity)
+FROM OrderDetails
+GROUP BY Quantity
+HAVING Quantity BETWEEN 0 AND 40
+ORDER BY Quantity ASC 
+
+SELECT OrderID, OrderID, sum(quantity)
+from OrderDetails
+where OrderDetails BETWEEN 0 and 40
+GROUP by OrderID
+order by OrderDetails ASC

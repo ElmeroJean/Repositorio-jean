@@ -1,0 +1,37 @@
+--Uso de WHERE usando operadores de comparación y lógico
+
+--Ejercicio1 
+SELECT * from Products
+WHERE Price>20 and Price<50
+
+--Ejercicio2
+SELECT * FROM Employees
+where LastName 
+
+--Ejercicio3
+SELECT * FROM Orders
+WHERE EmployeeID=3 and ShipperID1
+
+--Ejercicio4 
+SELECT * FROM Customers
+where Country='USA' or 'UK'
+
+--Ejercicio5
+SELECT * FROM Products 
+where price>50 and CategoryID>1
+
+--Ejercicio6
+SELECT * FROM Employees 
+where FirstName NOT Nacy
+
+--Ejercicio7
+SELECT * FROM orders
+where Unit<30 and price<20
+
+--Ejercicio8
+SELECT * FROM Customers
+where City='London' or 'Paris' and Country='UK'
+
+--Ejercicio9
+SELECT * FROM Products
+WHERE CategoryID=1 or 2 Price >15 

@@ -1,0 +1,31 @@
+--Ejemplo1
+SELECT p.ProductName,
+       o.Quantity
+	   FROM (Products) p
+	   INNER JOIN(OrderDetails) o on p.ProductID=o.ProductID
+	   
+SELECT ProductName
+(SELECT Quantity FROM OrderDetails where Products.ProductID=ProductID) as Cantidades
+FROM Products
+
+--Ejemplo2
+SELECT e.LastName,
+       o.OrderDate,
+	   o.OrderID
+	   FROM (Employees) e
+	   INNER JOIN (Orders)	o on e.EmployeeID=o.EmployeeID
+	   
+SELECT OrderDate, OrderID,
+(SELECT LastName FROM Employees WHERE Orders.EmployeeID=EmployeeID) as Empleados
+FROM Orders
+
+--Ejemplo3
+SELECT c.CustomerName
+       o.OrderID
+	   FROM (Customers) c
+	   INNER JOIN (Orders) o on o.CustomerID=c.CustomerID
+
+	   
+SELECT CustomerName
+(SELECT OrderID FROM Orders WHERE Customers.CustomerID=CustomerID) as Ordenes
+FROM Customers

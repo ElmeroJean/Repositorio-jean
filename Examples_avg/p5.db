@@ -1,0 +1,20 @@
+--Example
+SELECT CategoryID,ProductID,
+(SELECT CategoryName FROM Categories
+WHERE Products.CategoryID=CategoryID) as Nombre_Categoria,
+sum(price) as Total_Por_Categoria
+FROM Products 
+WHERE SupplierID BETWEEN 0 and 10 GROUP by CategoryID
+HAVING Total_Por_Categoria BETWEEN 100 and 300
+order by Category 
+SELECT * FROM ProductID DESC.0
+
+SELECT * FROM Categories 
+SELECT CategoryID,ProductName
+FROM Products
+
+--Realice una consulta para mostrar los nombres de los empleados y las ordenes  realizadas
+SELECT FirstName,LastName,
+(SELECT EmployeeID FROM Employees
+WHERE Orders.EmployeeID=EmployeeID)
+FROM Employees

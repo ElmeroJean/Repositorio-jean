@@ -1,0 +1,37 @@
+--Otros Ejemplos con INNER JOIN
+---1-Mostrar las cantidades vendidas por empleados, mostrar los nombres de productos y las categorias. productos y cantidades vendidas.
+SELECT FirstName as Nombre_de_Empleados,ord.OrderID,
+count(Quantity),
+ProductName,CategoryName 
+FROM [Employees] e 
+INNER JOIN [Orders] o on o.EmployeeID=e.EmployeeID
+INNER JOIN [OrderDetails] ord on ord.OrderID=o.OrderID
+INNER JOIN [Products] p on p.ProductID=ord.ProductID
+INNER JOIN [Categories] c on c.CategoryID=p.CategoryID
+GROUP BY FirstName
+ORDER BY FirstName DESC
+--2-Nombre de empleados y fechas y ordenes realizadas.
+SELECT Employees.FirstName,Employees.LastName,
+       OrderDetails.OrderID,Orders.OrderDate
+FROM Employees
+INNER JOIN Orders on Orders.EmployeeID=Employees.EmployeeID
+INNER JOIN OrderDetails on OrderDetails.OrderID=Orders.OrderID
+
+--3-Nombre de clientes y ordenes realizadas por estos mismo.
+SELECT c.CustomerName, count(od.OrderID) as Total_Ordernes
+FROM Customers c
+INNER JOIN Orders o on o.CustomerID=c.CustomerID
+INNER JOIN OrderDetails od on od.OrderID=o.OrderID
+GROUP BY CustomerName
+ORDER by Total_Ordenes DESC
+
+--4-ordenes hechas por proveedor cantidades con los nombres de productos y sus categorias
+SELECT pr.SupplierID,ProductName,
+Count(Quantity),
+CategoryName,pr.CategoryID
+FROM [Suppliers] p
+INNER JOIN [Products] pr on p.SupplierID=pr.SupplierID
+INNER JOIN [OrderDetails] ord on pr.ProductID=ord.ProductID
+INNER JOIN [Categories] c on ord.CategoryID=c.CategoryID
+GROUP BY pr.SupplierID
+

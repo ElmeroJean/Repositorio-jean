@@ -1,0 +1,119 @@
+--Realizar 30 Inserciones, 30 Actualizaciones y 10 Eliminaciones.
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio2
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (31,11,12,'Manolo Morales','Matagalpa',45,'Nicaragua','6451-4455')
+
+--Ejercicio3
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (32,12,12,'Manolo Morales','Chinandega',46,'Nicaragua','5012-6934')
+
+--Ejercicio4
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (33,13,13,'Manolo Morales','Granada',47,'Nicaragua','1572-8965')
+
+--Ejercicio5
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (34,14,14,'Manolo Morales','Masaya',48,'Nicaragua','1258-9567')
+
+--Ejercicio6
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (35,15,15,'Manolo Morales','Managua',49,'Nicaragua','2265-7825')
+
+--Ejercicio7
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (36,16,16,'Manolo Morales','Bluefild',50,'Nicaragua','None')
+
+--Ejercicio8
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (37,17,17,'Manolo Morales','Managua',51,'Nicaragua','None')
+
+--Ejercicio9
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio10
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio11
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio12
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio13
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio14
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio15
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio16
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio17
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio18
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio19
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')
+
+--Ejercicio20
+SELECT * FROM Suppliers
+
+INSERT into Suppliers(SupplierID,SupplierName,ContactName,Address,City,PostalCode,Country,Phone)
+VALUES (30,10,11,'Manolo Morales','Managua',44,'Nicaragua','None')

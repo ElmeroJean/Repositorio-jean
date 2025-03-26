@@ -1,0 +1,23 @@
+--Ejercicio1 con SELECT
+select * from Products
+
+--Ejercicio2 
+SELECT * FROM Customers
+
+--Ejercicio3 
+SELECT * from Orders
+
+--Ejercicio4
+SELECT * from Employees
+
+--Ejercicio5
+SELECT * FROM 
+
+--Ejercicio6
+SELECT * FROM Suppliers
+
+--Ejercicio7 
+SELECT * FROM OrderDetails
+
+--Ejercicio8
+SELECT * FROM Shippers

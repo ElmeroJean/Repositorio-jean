@@ -1,0 +1,23 @@
+--Usar la función sum para el total de precios de la tabla Products
+SELECT sum(Price) as Total_del_precio 
+From Products
+
+--Usar la función max para mostrar el precio más alto junto al nombre de ese producto de la tabla Products
+SELECT ProductName, max(price) as Precio_más_Alto
+FROM Products
+
+--Usar la función para mostrar el precio más bajo junto al nombre de ese produto de la tabla Products
+SELECT ProductName, min(price) as Precio_más_Bajo
+FROM Products
+
+--Example
+SELECT ProductID, CategoryID as Categoria,
+avg(Price) as Promedio_por_Categoria
+FROM Products
+WHERE ProductID BETWEEN 0 and 50
+GROUP by CategoryID
+HAVING Promedio_por_categoria>=20 and promedio_por_Categoria<=30
+
+--Another one
+SELECT * FROM Customers
+WHERE ContactName like '__a%'

@@ -1,0 +1,27 @@
+--Exaples with differences codes
+SELECT count(*) from Customers
+SELECT * from Customers
+
+--Sum()
+SELECT sum(Price) as Total_de_Ventas from Products
+SELECT * FROM Products
+
+--Avg
+SELECT avg(price) as Promedio_del_Precio FROM Products
+
+--Max
+SELECT Max(price) as Precio_más_Alto FROM Products
+
+-- Min
+SELECT Min(price) as Precio_más_Bajo FROm Products
+
+--Total
+SELECT Total(Price) as 'Total' FROM Products
+
+--group_concat()
+SELECT group_concat
+
+--Uso de Funciones de Agregación con Group By
+SELECT 
+
+--Uso de HAVING con Agregaciones

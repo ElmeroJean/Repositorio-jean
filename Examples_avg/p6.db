@@ -1,0 +1,37 @@
+--Realizar una consulta que permita el promedio de cantidades vendidas por id de productos,
+--ademas unicamente debe trabajar con los id de las ordenes de detalles 1,4,6,7,10,22,11,24 y 35
+--Finalmente agrupe los campos y muestre las cantidades que unicamente se encuentren en el rango 
+--de 5-30 y ordene de forma DESC a traves del campo del cual saco el promedio.
+
+SELECT ProductID,
+(SELECT ProductName FROM Products
+WHERE OrderDetails.ProductID=ProductID)
+avg(price) as Precio_Total
+FROM Products
+WHERE ProductID in 1,4,6,7,10,22,11,24 AND 35
+GROUP by ProductName
+HAVING Precio_Total
+order by ProductName DESC
+
+--The same of up
+SELECT
+avg(Quantity) as promedioCantidad, 
+ProductID,OrderDetailID
+FROM OrderDetails
+WHERE OrderDetailID in (1,4,5,6,7,22,11,24,35)
+GROUP by ProductID
+HAVING promedioCantidad BETWEEN 5 AND 35
+ORDER by promedioCantidad DESC;
+
+--Realizar una consulta que muestre las fechas de las ordenes ralizadas por los clientes , se necesita que los datos mostrados
+--se limiten a las ordenes de id () ordene de forma DESC por EmployeeID.
+SELECT * from Orders
+SELECT OrderDate,CustomerID,OrderID,EmployeeID
+from Orders
+WHERE  CustomerID in(1,3,5,6,7,8,9,10)
+ORDER by EmployeeID DESC
+
+--Crear una consulta que permita mostrar el Total de cantidades vendidas por ProductID, además se necesita saber el nombre del producto 
+--limite a que unicamente se muestren la información de los id de las ordenes entre 10248,10280,10300 y 10400
+--mostrar las cantidades vendidas mayores a 30 ordene de forma DESC por ProductID.
+

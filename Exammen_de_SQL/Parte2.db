@@ -1,0 +1,37 @@
+--Ejercicios con SELECT a algunos campos
+
+--Ejercicio1 
+SELECT ProductName, CategoryID
+FROM Products
+
+--Ejercicio2 
+SELECT CustomerName, Country USA
+FROM Customers
+
+--Ejercicio3
+SELECT FirstName, LastName, Country
+from Employees
+
+--Ejercicio4
+SELECT OrderID, CustomerID, OrderDate
+FROM Orders
+
+--Ejercicio5
+SELECT CategoryName, Description
+FROM Categories
+
+--Ejercicio6 
+SELECT SupplierName, ContactName, adress 
+FROM Suppliers
+
+--Ejercicio7
+SELECT ProductID, Price, Unit
+FROM Products
+
+--Ejercicio8
+SELECT OrderID, ProductID, Quantity
+FROM OrderDetails
+
+--Ejercicio9
+SELECT ShipperName, Phone
+FROM Shippers

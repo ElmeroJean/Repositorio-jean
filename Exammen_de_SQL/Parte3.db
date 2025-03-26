@@ -1,0 +1,41 @@
+--Uso del WHERE
+
+--Ejercicio1
+SELECT * from Products
+WHERE Price > 30
+
+--Ejercicio2
+SELECT * from Employees 
+WHERE lastname 
+
+--Ejercicio3
+SELECT * FROM Shippers
+WHERE 1996-01-01
+
+--Ejercicio4
+SELECT * FROM Customers
+where Country = 'USA'
+
+--Ejercicio5
+SELECT * FROM Products
+where Unit < 20
+
+--Ejercicio6
+SELECT * FROM Shippers
+WHERE Quantity > 100
+
+--Ejercicio7 
+SELECT * from Employees 
+WHERE BirthDate < '1970-01-01'
+
+--Ejercicio8 
+SELECT * from Products
+where Price = 15
+
+--Ejercicio9
+SELECT * FROM Suppliers
+WHERE Country!='USA'
+
+--Ejercicio10
+SELECT * FROM Products
+where CategoryID 2 condiment
